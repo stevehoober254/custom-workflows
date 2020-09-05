@@ -1,6 +1,6 @@
 name: first
 
-on: [push]
+on: push
 
 jobs:
     job1:
