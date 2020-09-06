@@ -21,8 +21,6 @@ jobs:
     
        echo "-----------------------------------------------"
        echo " Accessing enviroment variable using env context"
-       echo ${{WORKSPACE_ENVIROMENT_VARIABLE}}
-       echo ${{0 + 10}}
-       echo ${{ 7+3 }} "cant be accessed from context"
+      
        
        echo "================================================"
