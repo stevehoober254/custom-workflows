@@ -13,7 +13,7 @@ jobs:
     - name: Print custom enviroment variable from ubuntu
       env: 
        STEP_ENVIROMENT_VARIABLE: " THIS IS MY VARIABLE DEFINED AT STEP LEVEL"
-      run: |
+      run:  |
        echo "Accessing enviroment variable from run command"
        echo "$WORKSPACE_ENVIROMENT_VARIABLE"
        echo "$JOB_ENVIROMENT_VARIABLE"
