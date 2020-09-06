@@ -21,7 +21,7 @@ jobs:
                run: echo steve likes carol
     job3:
        name: Third Job
-       runs-on: mac-latest
+       runs-on: macos-latest
        steps:
            - name: npm unused package checker
              uses: Amr-Reda/npm-unused-packages-checker@v1
