@@ -15,7 +15,7 @@ jobs:
         STEP_ENVIROMENT_VARIABLE: " THIS IS MY VARIABLE DEFINED AT STEP LEVEL"
       run:  |
        echo "Accessing enviroment variable from run command"
-      
+       echo $WORKSPACE_ENVIROMENT_VARIABLE
     
        echo "-----------------------------------------------"
        echo " Accessing enviroment variable using env context"
