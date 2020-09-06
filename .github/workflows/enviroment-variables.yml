@@ -21,7 +21,7 @@ jobs:
     
        echo "-----------------------------------------------"
        echo " Accessing enviroment variable using env context"
-       echo ${{ 30 / 3}}
+       echo ${{ 30 - 20}}
        echo ${{0 + 10}}
        echo ${{ 7+3 }} "cant be accessed from context"
        
