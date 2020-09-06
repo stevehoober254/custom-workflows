@@ -16,8 +16,7 @@ jobs:
       run:  |
        echo "Accessing enviroment variable from run command"
       
-       echo "$JOB_ENVIROMENT_VARIABLE"
-       echo "$STEP_ENVIROMENT_VARIABLE"
+    
        echo "-----------------------------------------------"
        echo " Accessing enviroment variable using env context"
       
