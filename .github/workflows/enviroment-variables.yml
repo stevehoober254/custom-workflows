@@ -20,7 +20,7 @@ jobs:
        echo "$STEP_ENVIROMENT_VARIABLE"
        echo "-----------------------------------------------"
        echo " Accessing enviroment variable using env context"
-       echo "${{WORKSPACE_ENVIROMENT_VARIABLE}}"
+      
        echo " ${{JOB_ENVIROMENT_VARIABLE}}"
        echo " ${{STEP_ENVIROMENT_VARIABLE}} Not Defined"
        echo "================================================"
