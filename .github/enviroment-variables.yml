@@ -1,0 +1,26 @@
+name: Custom enviroment variables
+
+env:
+ WORKSPACE_ENVIROMENT_VARIABLE: "THIS IS MY VARIABLE DEFINED AT WORKFLOW LEVEL"
+on: 
+  push :
+jobs:
+ ubuntu:
+  env:
+   JOB_ENVIROMENT_VARIABLE: "THIS IS MY VARIABLE DEFINED AT JOBS LEVEL"
+  runs-on: ubuntu-latest
+  steps:
+    - name: Print custom enviroment variable from ubuntu
+      env: 
+       STEP_ENVIROMENT_VARIABLE: " THIS IS MY VARIABLE DEFINED AT STEP LEVEL"
+      run: |
+       echo "Accessing enviroment variable from run command"
+       echo "$WORKSPACE_ENVIROMENT_VARIABLE"
+       echo "$JOB_ENVIROMENT_VARIABLE"
+       echo "$STEP_ENVIROMENT_VARIABLE"
+       echo "-----------------------------------------------"
+       echo " Accessing enviroment variable using env context"
+       echo "${{WORKSPACE_ENVIROMENT_VARIABLE}}"
+       echo " ${{JOB_ENVIROMENT_VARIABLE}}"
+       echo " ${{STEP_ENVIROMENT_VARIABLE}} Not Defined"
+       echo "================================================"
